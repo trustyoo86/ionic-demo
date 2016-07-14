@@ -14,5 +14,6 @@ var imageConfig = require('../config/imageConfig');
 gulp.task('images', function () {
   gulp.src(imageConfig.dev.src)
     .pipe(changed(imageConfig.dev.dest))
-    .pipe(gulpif(global.isProd, imagemin()));
+    .pipe(gulpif(global.isProd, imagemin()))
+    .pipe(gulp.dest(imageConfig.dev.dest));
 });
