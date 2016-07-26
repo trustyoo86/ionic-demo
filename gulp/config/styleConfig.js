@@ -5,17 +5,17 @@
  */
 module.exports = {
   //vender
-  vender : {
+  ionic : {
     src :[
-      'bower_components/ionic/css/ionic.css'
+      'public/styles/style.scss'
     ],
-    concat : 'vender.css',
+    concat : 'ionic.css',
     dest : 'www/styles'
   },
   //개발용 css
   dev : {
-    src :'public/styles/**/*.scss',
-    concat : 'style.css',
-    dest : 'www/styles'
+    src :'public/styles/dev/*.scss',
+    concat : 'main.css',
+    dest : 'www/styles/dev'
   }
 };
