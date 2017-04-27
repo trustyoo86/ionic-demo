@@ -1,4 +1,4 @@
-Ionic Demo
+Ionic-Gulp-Boilerplate
 =====================
 
 ## 개요 - summary
@@ -13,13 +13,32 @@ In order to develop a non- ionic developed directly within the www folder , and 
 
 All current sources are developed and managed in the public folder. Other libraries are installed, but a bower, recall the source from bower_components, because they use it to build a file called vender.js, do not look at the www folder. ( Including the ionic.)
 
+## 설치 - Setting
+
+ionic-gulp-boilerplate를 사용하기 위해서는 ionic이 설치되어 있어야 합니다.
+
+If you use ionic-gulp-boilerplate, you must install ionic from npm. (version 1.0)
+
+```bash
+npm install -g ionic
+```
+
+npm install 및 bower install을 진행합니다.
+
+You must commands npm install and bower install.
+
+```bash
+npm install
+bower install
+```
+
 ## 사용법 - Usage
 
 ### 1) gulp task 실행 - gulp task execution
 
 개발 후에, public 폴더에서 www 폴더로 빌드하기 위해서, 다음과 같은 커맨드를 실행합니다.
 
-In order to build after the development, in the public folder to the www folder , run the following commands 
+In order to build after the development, in the public folder to the www folder , run the following commands
 
 #### 1.1) 개발 모드 - Development Mode
 
@@ -27,9 +46,9 @@ In order to build after the development, in the public folder to the www folder 
 
 In development mode, you will identify each file to watch status. Identified by changing the file is build into the www folder.
 
-`
+```bash
 $gulp dev
-`
+```
 
 #### 1.2) 배포 모드 - Deployment Modes
 
@@ -37,9 +56,9 @@ $gulp dev
 
 In a separate deployment mode it does not detect file changes , run minify for each file.
 
-`
+```bash
 $gulp prod
-`
+```
 
 ### 2) 실행 - Execution
 
@@ -49,6 +68,6 @@ $gulp prod
 
 Run in test mode in the browser. (If you are developing .)
 
-`
+```bash
 $ionic serve
-`
+```

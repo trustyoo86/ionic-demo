@@ -14,8 +14,8 @@ module.exports = {
   },
   //개발용 css
   dev : {
-    src :'public/styles/dev/*.scss',
-    concat : 'main.css',
-    dest : 'www/styles/dev'
+    src :'public/styles/*.scss',
+    concat : 'style.css',
+    dest : 'www/styles'
   }
 };

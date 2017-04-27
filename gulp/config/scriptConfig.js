@@ -8,9 +8,10 @@ module.exports = {
   //src
   src : [
     'public/app.js',
-    'public/constant.js',
-    'public/routes.js',
-    'public/**/**/*.js',
+    'public/config.js',
+    'public/run.js',
+    'public/common/**/*.js',
+    'public/pages/**/*.js',
   ],
   //concat target
   concat : 'app.js',

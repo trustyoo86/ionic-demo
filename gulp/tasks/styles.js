@@ -8,14 +8,13 @@ var autoprefixer = require('gulp-autoprefixer');
 //config
 var styleConfig = require('../config/styleConfig');
 
-gulp.task('compile-sass', function () {
-  // gulp.src(styleConfig.vendor.src)
-  //   .pipe(concat(styleConfig.vendor.concat))
-  //   .pipe(gulp.dest(styleConfig.vendor.dest));
-
+gulp.task('compile-sass', function (cb) {
   gulp.src(styleConfig.dev.src)
     .pipe(sass())
     .pipe(concat(styleConfig.dev.concat))
     .pipe(autoprefixer("last 2 versions", "> 1%", "ie 9"))
-    .pipe(gulp.dest(styleConfig.dev.dest));
+    .pipe(gulp.dest(styleConfig.dev.dest))
+    .on('end', function () {
+      cb();
+    });
 });

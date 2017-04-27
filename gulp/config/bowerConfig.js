@@ -12,7 +12,7 @@ module.exports = {
     'bower_components/ionic/js/ionic.bundle.min.js'
   ],
   //concat
-  concat : 'vender.js',
+  concat : 'vendor.js',
   //dest
   dest : 'www/js'
 };

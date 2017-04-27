@@ -10,5 +10,5 @@ gulp.task('dev', ['clean'], function (cb) {
 
   global.isProd = false;
 
-  runSequence(['compile-sass', 'combine-js', 'views', 'images', 'fonts'], 'watch', cb);
+  runSequence(['compile-sass', 'build-vendor', 'combine-js', 'views', 'images', 'fonts'], 'watch', cb);
 });
